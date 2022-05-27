@@ -1,6 +1,6 @@
 # LAB - Class 31
 
-Project: drf-api
+Project: best-book-api
 
 Author: Nicholas Mercado
 

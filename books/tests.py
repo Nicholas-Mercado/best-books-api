@@ -21,7 +21,7 @@ class BookTests(APITestCase):
         )
         test_thing.save()
         
-    def test_things_model(self):
+    def test_books_model(self):
         book = Book.objects.get(id=1)
         actual_owner = str(book.owner)
         actual_name = str(book.title)
@@ -75,7 +75,7 @@ class BookTests(APITestCase):
         self.assertEqual(books.description, data["description"])
         
     # @skip('not yet')
-    def test_delete_thing(self):
+    def test_delete_book(self):
         url = reverse("book_detail", args=(1,))
         response = self.client.delete(url)
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
